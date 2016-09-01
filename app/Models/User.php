@@ -15,7 +15,7 @@ class User extends Authenticatable
         'first_name', 'last_name', 'address','phone',
     ];
     protected $appends=[
-        'name'
+        'nname'
        ];
 
 
@@ -30,7 +30,7 @@ class User extends Authenticatable
 
     function getNameAttribute()
     {
-      return $this->   first_name ."". $this->  last_name;
+      return $this->first_name ."". $this->last_name;
     }
     function getAddressAttribute($value)
     {
